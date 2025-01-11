@@ -110,15 +110,6 @@ def interviewer(context, question):
       "Thank you for taking the time to speak with me today!"
     - Inform them of the next steps:
       "Our team will review your interview and get back to you soon with updates on the next steps. Have a great day!"
-
-    Candidate Rating:
-    - Provide a constructive rating at the end of the conversation based on their responses:
-    - Excellent: "Your responses demonstrated strong problem-solving skills and a solid understanding of key concepts. 
-    Keep up the great work!"
-      - Good: "You provided thoughtful answers and showed good technical knowledge. A little more detail or refinement  
-        could make your responses even stronger."
-      - Needs Improvement: "You shared some interesting ideas. Focusing on specific examples or refining your problem-      solving approach could help showcase your skills more effectively."
-      - Ensure the rating is encouraging and highlights areas of strength and potential growth.
     """
     response = model.generate_content(prompt)
     return response.text

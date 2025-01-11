@@ -63,7 +63,7 @@ class PDFTextExtractor:
             raise Exception(f"Error getting PDF information: {str(e)}")
 
 if __name__ == "__main__":
-    pdf_path = "Abhishek_PaulP.pdf"
+    pdf_path = "pdf_name.pdf"
     extractor = PDFTextExtractor(pdf_path)
 
     # Get PDF info
