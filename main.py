@@ -8,7 +8,10 @@ import tempfile
 
 load_dotenv()
 # Initialize Gemini
-genai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
+# genai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
+
+# for the deployment, we will use the Streamlit secrets feature to securely store the API key
+genai.configure(api_key=st.secrets["API_KEY"])
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 # function to analyze the resume text and extract relevant information in JSON format
