@@ -11,7 +11,7 @@ load_dotenv()
 genai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
 model = genai.GenerativeModel('gemini-1.5-flash')
 
-# Define the function to analyze the resume text and extract relevant information in JSON format
+# function to analyze the resume text and extract relevant information in JSON format
 def analyze_resume(text):
     prompt = f"""
     Extract the following details from the resume text. Ensure the extracted information is consistent and structured in the following JSON format, even if some fields are missing:
@@ -62,7 +62,7 @@ def analyze_resume(text):
         st.error(f"Error parsing response: {str(e)}")
         return {}
 
-# Define the interviewer function to generate questions based on the candidate's context and responses
+# interviewer function to generate questions based on the candidate's context and responses
 def interviewer(context, question):
     import json
 
@@ -81,7 +81,7 @@ def interviewer(context, question):
     3. Show interest in their thought process and experience
     4. Build upon their responses naturally
     5. Use everyday scenarios to explore technical concepts
-    6. don't ask too many question on same topic diversify the question 
+    6. if your are asking question about project then ask candidate with which project they are comfortable to discuss
     7. keep max no. of question to 8-10 based on candidate response
 
     Question Types to Mix:
@@ -90,6 +90,7 @@ def interviewer(context, question):
     - Opinion questions: "What do you think about..."
     - Architecture discussions: "How would you design..."
     - Best practices: "How do you usually handle..."
+    - data structure and algorithm questions: "What is your approach..."
 
     Style:
     - Keep the tone warm and engaging
