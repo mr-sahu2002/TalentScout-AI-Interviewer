@@ -78,8 +78,6 @@ The **Resume Analyzer & Interview Assistant** is a Streamlit-based application d
 - **Interview Questions**: Dynamically generated based on the context to simulate a real interview.
 - **Interactive UI**: Streamlit’s session state enables persistent state management for chat history and candidate data.
 
----
-
 ## Prompt Design
 
 ### Resume Analysis Prompt
@@ -95,7 +93,6 @@ The prompt adheres to the following:
 - Combines conversational and technical assessments.
 - Includes fallback mechanisms for unclear inputs.
 
----
 
 ## Challenges & Solutions
 
@@ -109,4 +106,11 @@ The prompt adheres to the following:
 2. **Context-Aware Prompts**: Designed robust prompts to dynamically adapt to candidate profiles.
 3. **File Size Validation**: Set a 10MB file size limit to ensure efficient processing.
 
----
+## Future implmentation 
+1. **Text to Speech (TTS) Integration** **& Speech to Text (STT) Integration**
+2. **Code Editor for Technical Questions**
+3. **AI Proctoring for Monitoring Interview Integrity**
+
+# Deployed on streamlit 
+[talentscout-ai-interviewer.streamlit.app](talentscout-ai-interviewer.)
+
