@@ -112,5 +112,5 @@ The prompt adheres to the following:
 3. **AI Proctoring for Monitoring Interview Integrity**
 
 # Deployed on streamlit 
-[talentscout-ai-interviewer.streamlit.app](talentscout-ai-interviewer.)
+[talentscout-ai-interviewer](https://talentscout-ai-interviewer.streamlit.app/)
 
